@@ -41,14 +41,14 @@
                                           {{task.description}}
                                       </td>
                                       <td>
-                                          {{task.assignee}}
+                                          {{task.assignee.userName}}
                                       </td>
                                       <td>
-                                        <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                        <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon" (click)="editTask(task)">
                                             <i class="material-icons">edit</i>
                                             <div class="ripple-container"></div>
                                         </button>
-                                        <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                        <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon" (click)="deleteTask(task.id)">
                                             <i class="material-icons">delete</i>
                                             <div class="ripple-container"></div>
                                         </button>
@@ -106,7 +106,7 @@
                                             <i class="material-icons">edit</i>
                                             <div class="ripple-container"></div>
                                         </button>
-                                        <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                        <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon" >
                                             <i class="material-icons">delete</i>
                                             <div class="ripple-container"></div>
                                         </button>

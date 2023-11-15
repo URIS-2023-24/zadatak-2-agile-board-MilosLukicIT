@@ -1,8 +1,8 @@
 import { Contributors } from "./contributors";
 
-export class Task {
-    id: number;
+export class TaskDialogData {
     title: string;
     description: string;
     assignee: Contributors;
+    contributors: Contributors[];
 }
